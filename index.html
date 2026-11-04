@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>渋谷念法寺へようこそ♡｜令和8年 関東ブロック 青少年育成発展祈願護摩</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: 10代〜20代女子に人気の丸文字・ポップ系フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            maru: ['"Zen Maru Gothic"', '"M PLUS Rounded 1c"', 'sans-serif'],
+            kiwi: ['"Kiwi Maru"', 'serif'],
+          },
+          colors: {
+            sakura: {
+              50: '#fff8fa',
+              100: '#ffedf2',
+              200: '#ffd8e4',
+              300: '#ffb8ce',
+              400: '#ff8ab0',
+              500: '#fb5d92',
+              600: '#e83b76',
+            },
+            lavender: {
+              50: '#f9f6ff',
+              100: '#f1eaff',
+              200: '#e2d4ff',
+              400: '#b794f4',
+              500: '#9f7aea',
+              600: '#805ad5',
+            },
+            mint: {
+              50: '#f2fbf9',
+              100: '#d8f5ee',
+              400: '#4fd1c5',
+              500: '#38b2ac',
+            },
+            cream: '#fffdf9',
+            choco: '#5c434c',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Zen Maru Gothic', 'M PLUS Rounded 1c', sans-serif;
+      color: #5c434c;
+      background-color: #fffdf9;
+      overflow-x: hidden;
+    }
+
+    /* 背景の可愛いドット＆パステルグラデーション */
+    .kawaii-bg {
+      background-color: #fff9fb;
+      background-image: 
+        radial-gradient(#ffd8e4 1.5px, transparent 1.5px),
+        radial-gradient(#e2d4ff 1.5px, #fff9fb 1.5px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+
+    /* ちびキャラの軽やかなアニメーション */
+    @keyframes chibiFloat {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-10px) rotate(-1.5deg);
+      }
+      50% {
+        transform: translateY(-4px) rotate(1.5deg);
+      }
+      75% {
+        transform: translateY(-12px) rotate(-1deg);
+      }
+    }
+
+    @keyframes chibiJump {
+      0%, 100% {
+        transform: translateY(0) scale(1, 1);
+      }
+      30% {
+        transform: translateY(-18px) scale(0.97, 1.04);
+      }
+      50% {
+        transform: translateY(0) scale(1.04, 0.96);
+      }
+      70% {
+        transform: translateY(-8px) scale(0.99, 1.02);
+      }
+    }
+
+    @keyframes armWave {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(-22deg);
+      }
+    }
+
+    @keyframes armWaveLeft {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(15deg);
+      }
+    }
+
+    @keyframes headTilt {
+      0%, 100% {
+        transform: rotate(-2deg);
+      }
+      50% {
+        transform: rotate(3deg);
+      }
+    }
+
+    @keyframes eyeBlink {
+      0%, 92%, 100% {
+        transform: scaleY(1);
+      }
+      96% {
+        transform: scaleY(0.08);
+      }
+    }
+
+    @keyframes ribbonSway {
+      0%, 100% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(6deg);
+      }
+    }
+
+    @keyframes sparklePulse {
+      0%, 100% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1.25) rotate(20deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .animate-chibi-float {
+      animation: chibiFloat 3.4s ease-in-out infinite;
+    }
+
+    .animate-chibi-jump {
+      animation: chibiJump 2.6s ease-in-out infinite;
+    }
+
+    .chibi-head {
+      transform-origin: 100px 105px;
+      animation: headTilt 2.8s ease-in-out infinite;
+    }
+
+    .chibi-arm-right {
+      transform-origin: 128px 128px;
+      animation: armWave 1.1s ease-in-out infinite;
+    }
+
+    .chibi-arm-left {
+      transform-origin: 72px 128px;
+      animation: armWaveLeft 1.8s ease-in-out infinite;
+    }
+
+    .chibi-eyes {
+      transform-origin: 100px 82px;
+      animation: eyeBlink 4s infinite;
+    }
+
+    .chibi-ribbon {
+      transform-origin: 100px 45px;
+      animation: ribbonSway 2.2s ease-in-out infinite;
+    }
+
+    .sparkle-anim {
+      animation: sparklePulse 2s ease-in-out infinite;
+    }
+
+    .float-slow {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
+
+    /* ポップな見出し装飾 */
+    .text-pop-shadow {
+      text-shadow: 2px 2px 0px #ffffff, 4px 4px 0px rgba(251, 93, 146, 0.2);
+    }
+
+    /* 写真フレームのマスキングテープ風装飾 */
+    .masking-tape {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-2deg);
+      width: 110px;
+      height: 28px;
+      background: rgba(255, 184, 206, 0.65);
+      backdrop-filter: blur(2px);
+      border-left: 2px dashed rgba(255, 255, 255, 0.8);
+      border-right: 2px dashed rgba(255, 255, 255, 0.8);
+      z-index: 10;
+    }
+
+    /* スクロールバー装飾 */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #fff0f5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ffb8ce;
+      border-radius: 9999px;
+      border: 2px solid #fff0f5;
+    }
+  </style>
+</head>
+<body class="kawaii-bg selection:bg-sakura-200 selection:text-choco">
+
+  <!-- ==========================================
+       1. サイトを開いた時の画面いっぱいウェルカム演出
+       ========================================== -->
+  <div id="welcome-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-b from-sakura-100/95 via-white/95 to-lavender-100/95 backdrop-blur-md transition-all duration-700 px-4 overflow-hidden">
+    
+    <!-- 背景のキラキラ・桜びら装飾 -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+      <div class="absolute top-10 left-[10%] text-sakura-400 text-3xl sparkle-anim">✦</div>
+      <div class="absolute top-20 right-[15%] text-amber-300 text-4xl sparkle-anim" style="animation-delay: 0.5s;">★</div>
+      <div class="absolute bottom-24 left-[18%] text-lavender-400 text-3xl sparkle-anim" style="animation-delay: 1s;">♡</div>
+      <div class="absolute bottom-16 right-[12%] text-sakura-400 text-3xl sparkle-anim" style="animation-delay: 0.3s;">✿</div>
+      <div class="absolute top-1/3 left-[6%] w-24 h-24 rounded-full bg-sakura-200/40 blur-xl"></div>
+      <div class="absolute bottom-1/4 right-[8%] w-32 h-32 rounded-full bg-lavender-200/50 blur-xl"></div>
+    </div>
+
+    <!-- ウェルカムコンテンツ本体 -->
+    <div class="relative z-10 max-w-lg w-full text-center flex flex-col items-center">
+      <!-- 吹き出し -->
+      <div class="relative bg-white border-4 border-sakura-300 rounded-3xl px-6 py-4 shadow-xl mb-3 animate-bounce">
+        <p class="text-xs sm:text-sm font-bold text-sakura-500 tracking-wider mb-1">
+          ＼ 令和8年11月7日(土) 開催決定！ ／
+        </p>
+        <h1 class="text-2xl sm:text-4xl font-black text-choco tracking-tight">
+          <span class="text-sakura-500">渋谷念法寺</span>へようこそ<span class="text-sakura-400">♡</span>
+        </h1>
+        <!-- 吹き出しの三角 -->
+        <div class="absolute -bottom-3.5 left-1/2 -translate-x-1/2 w-6 h-6 bg-white border-b-4 border-r-4 border-sakura-300 rotate-45"></div>
+      </div>
+
+      <!-- 画面いっぱいに登場する可愛いちびキャラの女の子 (SVG) -->
+      <div class="w-64 h-64 sm:w-80 sm:h-80 relative flex items-center justify-center my-1 animate-chibi-jump cursor-pointer" onclick="closeWelcomeScreen()">
+        <div class="chibi-svg-container w-full h-full"></div>
+      </div>
+
+      <!-- サブメッセージ -->
+      <p class="text-sm sm:text-base font-bold text-choco/80 bg-white/80 px-5 py-2 rounded-full shadow-sm border border-sakura-200 mb-5">
+        関東ブロック 青少年育成発展祈願護摩 ✨<br class="sm:hidden" />
+        みんなで素敵な1日を過ごそう♪
+      </p>
+
+      <!-- サイトへ入るボタン -->
+      <button onclick="closeWelcomeScreen()" class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-sakura-400 via-sakura-500 to-lavender-500 text-white font-black text-lg sm:text-xl px-10 py-4 rounded-full shadow-[0_8px_20px_rgba(251,93,146,0.4)] hover:shadow-[0_12px_25px_rgba(251,93,146,0.55)] hover:-translate-y-1 active:translate-y-0 transition-all">
+        <span>ページを見てみる</span>
+        <i class="fa-solid fa-heart text-yellow-200 group-hover:scale-125 transition-transform"></i>
+      </button>
+      <p class="text-xs text-choco/60 mt-3">※タップするとページが開きます</p>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       2. 右下に常時表示される可愛いちびキャラ
+       ========================================== -->
+  <div id="floating-chibi-widget" class="fixed bottom-3 right-3 sm:bottom-5 sm:right-5 z-40 flex flex-col items-end pointer-events-none">
+    <!-- ちびキャラのセリフ吹き出し -->
+    <div id="chibi-speech-bubble" class="pointer-events-auto relative bg-white/95 backdrop-blur border-2 border-sakura-300 rounded-2xl px-4 py-2.5 shadow-lg mb-2 mr-2 max-w-[220px] sm:max-w-[250px] transition-all duration-300 transform origin-bottom-right">
+      <button onclick="toggleSpeechBubble(event)" class="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-sakura-400 text-white text-[10px] flex items-center justify-center shadow hover:bg-sakura-500" title="吹き出しを閉じる">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <p id="chibi-speech-text" class="text-xs sm:text-sm font-bold text-choco leading-snug">
+        渋谷念法寺へようこそ♡<br><span class="text-sakura-500">11月7日(土)</span>に会えるのを楽しみにしてるね♪
+      </p>
+      <div class="absolute -bottom-2 right-8 w-3.5 h-3.5 bg-white border-b-2 border-r-2 border-sakura-300 rotate-45"></div>
+    </div>
+
+    <!-- ちびキャラ本体（常時軽やかに動く＆タップでセリフ変化） -->
+    <div onclick="interactWithChibi()" class="pointer-events-auto group relative w-28 h-28 sm:w-36 sm:h-36 cursor-pointer select-none animate-chibi-float" title="タップするとお話するよ♪">
+      <!-- 背後のパステルオーラ -->
+      <div class="absolute inset-2 rounded-full bg-gradient-to-tr from-sakura-200/70 to-lavender-200/70 blur-md group-hover:scale-110 transition-transform"></div>
+      <!-- ちびキャラSVG差し込み -->
+      <div class="chibi-svg-container relative w-full h-full drop-shadow-md group-hover:scale-105 transition-transform"></div>
+      <!-- タップバッジ -->
+      <span class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-sakura-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm whitespace-nowrap border border-white">
+        <i class="fa-solid fa-sparkles mr-0.5"></i>タップしてね
+      </span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       3. ナビゲーションヘッダー
+       ========================================== -->
+  <header class="sticky top-0 z-30 bg-white/85 backdrop-blur-md border-b-2 border-sakura-100 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="w-9 h-9 rounded-2xl bg-gradient-to-br from-sakura-400 to-lavender-400 flex items-center justify-center text-white shadow-sm group-hover:rotate-12 transition-transform">
+          <i class="fa-solid fa-torii-gate text-sm"></i>
+        </span>
+        <div>
+          <span class="block text-[10px] font-bold text-sakura-500 leading-none">令和8年 関東ブロック</span>
+          <span class="block text-sm sm:text-base font-black text-choco tracking-tight">東京渋谷念法寺 ♡</span>
+        </div>
+      </a>
+
+      <!-- ナビリンク -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-bold text-choco/80">
+        <a href="#about" class="hover:text-sakura-500 transition-colors">イベント概要</a>
+        <a href="#gallery" class="hover:text-sakura-500 transition-colors">思い出ギャラリー</a>
+        <a href="#schedule" class="hover:text-sakura-500 transition-colors">当日のプログラム</a>
+        <a href="#access" class="hover:text-sakura-500 transition-colors">会場・アクセス</a>
+      </nav>
+
+      <!-- ようこそ画面をもう一度見るボタン -->
+      <button onclick="openWelcomeScreen()" class="inline-flex items-center gap-1.5 bg-sakura-100 hover:bg-sakura-200 text-sakura-600 font-bold text-xs sm:text-sm px-3.5 py-2 rounded-full transition-all shadow-sm">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <span>お出迎えを見る</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       4. ヒーローセクション（チラシメイン情報）
+       ========================================== -->
+  <section id="about" class="relative pt-8 pb-16 sm:py-16 px-4 overflow-hidden">
+    <!-- 背景の和ポップ装飾 -->
+    <div class="max-w-5xl mx-auto relative">
+      <!-- トップリボンバッジ -->
+      <div class="flex justify-center mb-5">
+        <div class="inline-flex items-center gap-2 bg-white border-2 border-sakura-300 rounded-full px-5 py-1.5 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-sakura-400 animate-ping"></span>
+          <span class="text-xs sm:text-sm font-black text-sakura-500 tracking-wider">令和8年 関東ブロック 特別イベント</span>
+          <span class="text-amber-400">★</span>
+        </div>
+      </div>
+
+      <!-- メインカード -->
+      <div class="relative bg-white/90 backdrop-blur rounded-[2.5rem] border-4 border-sakura-200 shadow-[0_15px_40px_rgba(251,93,146,0.12)] p-6 sm:p-12 text-center overflow-hidden">
+        <!-- 四隅の和風パステル飾り -->
+        <div class="absolute -top-10 -left-10 w-36 h-36 bg-sakura-100 rounded-full opacity-70 pointer-events-none"></div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-lavender-100 rounded-full opacity-70 pointer-events-none"></div>
+
+        <p class="font-kiwi text-base sm:text-xl text-lavender-600 font-medium mb-2">
+          ── 令和8年 関東ブロック ──
+        </p>
+
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-black text-choco tracking-tight leading-tight text-pop-shadow mb-6">
+          青少年育成発展<br class="sm:hidden" />
+          <span class="bg-gradient-to-r from-sakura-500 via-pink-500 to-lavender-500 bg-clip-text text-transparent">祈願護摩</span>
+        </h2>
+
+        <p class="max-w-xl mx-auto text-sm sm:text-base text-choco/80 font-medium leading-relaxed mb-8">
+          鹿沼・朝霞・千葉とバトンをつないできた令和8年の関東ブロック行事♡<br />
+          いよいよ<strong class="text-sakura-500 underline decoration-wavy decoration-sakura-300 underline-offset-4">11月7日(土)は「東京渋谷念法寺」</strong>にみんなが大集合！<br />
+          お護摩や記念撮影、楽しい青年座談会で素敵な思い出を作ろう♪
+        </p>
+
+        <!-- 日時・会場のポップな2カラムカード -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto mb-8">
+          <!-- 日時カード -->
+          <div class="bg-gradient-to-br from-sakura-50 to-white border-2 border-sakura-200 rounded-3xl p-5 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+            <span class="bg-sakura-400 text-white text-xs font-black px-4 py-1 rounded-full mb-2 shadow-sm">
+              <i class="fa-regular fa-calendar-check mr-1"></i>DATE / 日時
+            </span>
+            <p class="text-sm font-bold text-choco/70">令和8年</p>
+            <p class="text-3xl sm:text-4xl font-black text-sakura-500 tracking-tight my-0.5">
+              11<span class="text-xl">月</span>7<span class="text-xl">日</span><span class="inline-block bg-sakura-100 text-sakura-600 text-lg px-2.5 py-0.5 rounded-xl ml-1 border border-sakura-300">土</span>
+            </p>
+            <p class="text-xs font-bold text-choco/70 mt-1">12:30 受付開始 ／ 17:00 解散</p>
+          </div>
+
+          <!-- 会場カード -->
+          <div class="bg-gradient-to-br from-lavender-50 to-white border-2 border-lavender-200 rounded-3xl p-5 shadow-sm flex flex-col items-center justify-center relative overflow-hidden">
+            <span class="bg-lavender-500 text-white text-xs font-black px-4 py-1 rounded-full mb-2 shadow-sm">
+              <i class="fa-solid fa-location-dot mr-1"></i>PLACE / 会場
+            </span>
+            <p class="text-2xl sm:text-3xl font-black text-choco my-1">
+              東京渋谷念法寺
+            </p>
+            <p class="text-xs sm:text-sm font-bold text-choco/75">
+              東京都渋谷区2丁目5-11
+            </p>
+            <a href="tel:03-5577-4877" class="inline-flex items-center gap-1.5 text-xs font-bold text-lavender-600 bg-lavender-100 hover:bg-lavender-200 px-3 py-1 rounded-full mt-2 transition-colors">
+              <i class="fa-solid fa-phone"></i> TEL: 03-5577-4877
+            </a>
+          </div>
+        </div>
+
+        <!-- アクションボタン -->
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="#gallery" class="inline-flex items-center gap-2 bg-sakura-500 hover:bg-sakura-600 text-white font-black text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md hover:-translate-y-0.5 transition-all">
+            <i class="fa-solid fa-camera-retro"></i>
+            <span>みんなの思い出ギャラリーを見る</span>
+          </a>
+          <a href="#schedule" class="inline-flex items-center gap-2 bg-white hover:bg-sakura-50 text-sakura-500 border-2 border-sakura-300 font-black text-sm sm:text-base px-7 py-3.5 rounded-full shadow-sm hover:-translate-y-0.5 transition-all">
+            <i class="fa-regular fa-clock"></i>
+            <span>当日のスケジュール</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. 思い出フォトギャラリー（添付順：鹿沼→朝霞→千葉）
+       ========================================== -->
+  <section id="gallery" class="py-14 sm:py-20 px-4 relative">
+    <div class="max-w-5xl mx-auto">
+      <!-- セクションタイトル -->
+      <div class="text-center mb-12">
+        <span class="inline-block bg-lavender-100 text-lavender-600 font-black text-xs px-4 py-1 rounded-full border border-lavender-200 mb-2">
+          PHOTO GALLERY ♡
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-choco text-pop-shadow">
+          関東ブロック 思い出ギャラリー
+        </h2>
+        <p class="text-xs sm:text-sm text-choco/75 font-bold mt-2">
+          鹿沼念法寺・朝霞念法寺・千葉念法寺での笑顔あふれる素敵な瞬間をご紹介します✨
+        </p>
+      </div>
+
+      <!-- ギャラリーカード一覧（ご指定の順番通り：1.鹿沼念法寺 → 2.朝霞念法寺 → 3.千葉念法寺） -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- ① 鹿沼念法寺（1枚目の写真：image_5.png） -->
+        <article class="group relative bg-white rounded-[2rem] border-4 border-amber-200 shadow-lg hover:shadow-2xl transition-all duration-300 p-4 sm:p-5 flex flex-col">
+          <div class="masking-tape" style="background: rgba(251, 191, 36, 0.45);"></div>
+          
+          <!-- ステップ＆日付バッジ -->
+          <div class="flex items-center justify-between mb-3 pt-1">
+            <span class="inline-flex items-center gap-1.5 bg-amber-100 text-amber-800 text-xs font-black px-3 py-1 rounded-full border border-amber-300">
+              <span class="w-4 h-4 rounded-full bg-amber-400 text-white flex items-center justify-center text-[10px]">1</span>
+              令和8年 6月3日
+            </span>
+            <span class="text-amber-400 text-lg"><i class="fa-solid fa-sun"></i></span>
+          </div>
+
+          <!-- 写真フレーム（加工なし・全体表示） -->
+          <div onclick="openLightbox('gallery-img-1', '鹿沼念法寺（令和8年6月3日）')" class="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-amber-50 border-2 border-amber-100 mb-4 shadow-inner cursor-pointer flex items-center justify-center">
+            <img
+              id="gallery-img-1"
+              src="image_8.png"
+              onerror="if(this.src!=='Image_8.png')this.src='Image_8.png';"
+              alt="鹿沼念法寺での集合写真"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute bottom-2 right-2 bg-white/90 text-amber-600 text-[11px] font-bold px-2.5 py-1 rounded-full shadow flex items-center gap-1 border border-amber-200 pointer-events-none">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>タップで拡大</span>
+            </div>
+          </div>
+
+          <!-- 寺院名＆紹介テキスト -->
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <h3 class="text-xl font-black text-choco">鹿沼念法寺</h3>
+                <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-md">#笑顔いっぱい</span>
+              </div>
+              <p class="text-xs sm:text-sm text-choco/80 leading-relaxed font-medium">
+                子どもから大人まで、白いお衣姿で心をひとつに合掌✨ アットホームで温かい雰囲気の中、みんなの素敵な笑顔が輝く一日になりました♪
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-dashed border-amber-200 flex items-center justify-between text-xs text-choco/60 font-bold">
+              <span><i class="fa-solid fa-heart text-sakura-400 mr-1"></i>Memory 01</span>
+              <button onclick="openLightbox('gallery-img-1', '鹿沼念法寺（令和8年6月3日）')" class="text-amber-600 hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>拡大して見る
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ② 朝霞念法寺（2枚目の写真：image_6.png） -->
+        <article class="group relative bg-white rounded-[2rem] border-4 border-mint-400/50 shadow-lg hover:shadow-2xl transition-all duration-300 p-4 sm:p-5 flex flex-col">
+          <div class="masking-tape" style="background: rgba(79, 209, 197, 0.45); transform: translateX(-50%) rotate(1.5deg);"></div>
+          
+          <!-- ステップ＆日付バッジ -->
+          <div class="flex items-center justify-between mb-3 pt-1">
+            <span class="inline-flex items-center gap-1.5 bg-mint-100 text-teal-800 text-xs font-black px-3 py-1 rounded-full border border-mint-400/40">
+              <span class="w-4 h-4 rounded-full bg-mint-500 text-white flex items-center justify-center text-[10px]">2</span>
+              令和8年 8月9日
+            </span>
+            <span class="text-mint-500 text-lg"><i class="fa-solid fa-seedling"></i></span>
+          </div>
+
+          <!-- 写真フレーム（加工なし・全体表示） -->
+          <div onclick="openLightbox('gallery-img-2', '朝霞念法寺（令和8年8月9日）')" class="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-mint-50 border-2 border-mint-100 mb-4 shadow-inner cursor-pointer flex items-center justify-center">
+            <img
+              id="gallery-img-2"
+              src="image_6.png"
+              onerror="if(this.src!=='Image_6.png')this.src='Image_6.png';"
+              alt="朝霞念法寺 関東ブロック夏の子ども会 集合写真"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute bottom-2 right-2 bg-white/90 text-teal-600 text-[11px] font-bold px-2.5 py-1 rounded-full shadow flex items-center gap-1 border border-mint-400/40 pointer-events-none">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>タップで拡大</span>
+            </div>
+          </div>
+
+          <!-- 寺院名＆紹介テキスト -->
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <h3 class="text-xl font-black text-choco">朝霞念法寺</h3>
+                <span class="text-xs font-bold text-teal-600 bg-mint-50 px-2 py-0.5 rounded-md">#夏の子ども会</span>
+              </div>
+              <p class="text-xs sm:text-sm text-choco/80 leading-relaxed font-medium">
+                きらびやかなご本尊様の前で「関東ブロック夏の子ども会」を開催🌻 たくさんの仲間が集まり、元気いっぱいの祈りと笑顔が広がりました！
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-dashed border-mint-400/40 flex items-center justify-between text-xs text-choco/60 font-bold">
+              <span><i class="fa-solid fa-heart text-sakura-400 mr-1"></i>Memory 02</span>
+              <button onclick="openLightbox('gallery-img-2', '朝霞念法寺（令和8年8月9日）')" class="text-teal-600 hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>拡大して見る
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ③ 千葉念法寺（3枚目の写真：image_7.png） -->
+        <article class="group relative bg-white rounded-[2rem] border-4 border-lavender-200 shadow-lg hover:shadow-2xl transition-all duration-300 p-4 sm:p-5 flex flex-col">
+          <div class="masking-tape" style="background: rgba(183, 148, 244, 0.45); transform: translateX(-50%) rotate(-1.5deg);"></div>
+          
+          <!-- ステップ＆日付バッジ -->
+          <div class="flex items-center justify-between mb-3 pt-1">
+            <span class="inline-flex items-center gap-1.5 bg-lavender-100 text-lavender-600 text-xs font-black px-3 py-1 rounded-full border border-lavender-200">
+              <span class="w-4 h-4 rounded-full bg-lavender-500 text-white flex items-center justify-center text-[10px]">3</span>
+              令和8年 9月6日
+            </span>
+            <span class="text-lavender-500 text-lg"><i class="fa-solid fa-star"></i></span>
+          </div>
+
+          <!-- 写真フレーム（加工なし・全体表示） -->
+          <div onclick="openLightbox('gallery-img-3', '千葉念法寺（令和8年9月6日）')" class="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-lavender-50 border-2 border-lavender-100 mb-4 shadow-inner cursor-pointer flex items-center justify-center">
+            <img
+              id="gallery-img-3"
+              src="image_7.png"
+              onerror="if(this.src!=='Image_7.png')this.src='Image_7.png';"
+              alt="千葉念法寺 青少年育成発展祈願護摩 集合写真"
+              class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute bottom-2 right-2 bg-white/90 text-lavender-600 text-[11px] font-bold px-2.5 py-1 rounded-full shadow flex items-center gap-1 border border-lavender-200 pointer-events-none">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>タップで拡大</span>
+            </div>
+          </div>
+
+          <!-- 寺院名＆紹介テキスト -->
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <h3 class="text-xl font-black text-choco">千葉念法寺</h3>
+                <span class="text-xs font-bold text-lavender-600 bg-lavender-50 px-2 py-0.5 rounded-md">#絆を深める</span>
+              </div>
+              <p class="text-xs sm:text-sm text-choco/80 leading-relaxed font-medium">
+                青少年育成発展祈願護摩の横断幕を囲んで記念撮影📸 世代を超えて優しく語り合い、みんなが仲良くなれる心温まるひとときでした♡
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-dashed border-lavender-200 flex items-center justify-between text-xs text-choco/60 font-bold">
+              <span><i class="fa-solid fa-heart text-sakura-400 mr-1"></i>Memory 03</span>
+              <button onclick="openLightbox('gallery-img-3', '千葉念法寺（令和8年9月6日）')" class="text-lavender-600 hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>拡大して見る
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 次のバトンは渋谷念法寺へ！バナー -->
+      <div class="mt-10 bg-gradient-to-r from-sakura-100 via-white to-lavender-100 border-2 border-sakura-300 rounded-3xl p-5 sm:p-6 text-center shadow-sm flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-sakura-400 text-white flex items-center justify-center text-2xl shadow-sm shrink-0">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <div class="text-center sm:text-left">
+          <p class="text-xs font-black text-sakura-500">NEXT STAGE ➔ 11.7 SAT</p>
+          <p class="text-base sm:text-lg font-black text-choco">
+            鹿沼・朝霞・千葉の思い出に続いて、次は<span class="text-sakura-500">「東京渋谷念法寺」</span>が舞台だよ♪
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. 当日のプログラム（タイムテーブル）
+       ========================================== -->
+  <section id="schedule" class="py-14 sm:py-20 px-4 bg-white/70 border-y-2 border-sakura-100">
+    <div class="max-w-3xl mx-auto">
+      <!-- セクション見出し -->
+      <div class="text-center mb-12">
+        <span class="inline-block bg-sakura-100 text-sakura-600 font-black text-xs px-4 py-1 rounded-full border border-sakura-200 mb-2">
+          TIME SCHEDULE ♪
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-choco text-pop-shadow">
+          当日のプログラム
+        </h2>
+        <p class="text-xs sm:text-sm text-choco/75 font-bold mt-2">
+          はじめての人も安心♡ 1日の流れをチェックしよう！
+        </p>
+      </div>
+
+      <!-- タイムライン -->
+      <div class="relative pl-6 sm:pl-10 border-l-4 border-dashed border-sakura-300 space-y-6">
+        
+        <!-- 12:30 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-sakura-200 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-sakura-400 text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-shirt"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-sakura-100 text-sakura-600 font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">12:30</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">受付開始 ／ 着替え</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            渋谷念法寺に到着したら受付へ♪ 白いお衣にお着替えして準備しよう！
+          </p>
+        </div>
+
+        <!-- 13:30 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-amber-200 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-amber-400 text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-amber-100 text-amber-700 font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">13:30</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">お護摩（青少年育成発展祈願護摩）</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            太鼓の音とお経が響く迫力満点のお護摩✨ みんなの夢や成長を心を込めて祈願します。
+          </p>
+        </div>
+
+        <!-- 15:00 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-mint-400/50 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-mint-500 text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-camera"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-mint-100 text-teal-700 font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">15:00</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">記念撮影 📸</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            参加した仲間みんなで記念写真をパシャリ♡ 最高の笑顔を残そう！
+          </p>
+        </div>
+
+        <!-- 15:10 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-lavender-200 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-lavender-500 text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-comment-dots"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-lavender-100 text-lavender-600 font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">15:10</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">住職先生のお話</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            毎日がちょっと前向きに、心がぽかぽか温かくなる住職先生のお話を聞こう🌷
+          </p>
+        </div>
+
+        <!-- 16:00 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-sakura-300 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-sakura-500 text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-mug-hot"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-sakura-100 text-sakura-600 font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">16:00</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">青年座談会 💬</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            同世代の仲間と楽しくおしゃべりタイム♪ 学校や趣味のこと、なんでも気軽に話せる大人気コーナー！
+          </p>
+        </div>
+
+        <!-- 17:00 -->
+        <div class="relative bg-white rounded-3xl p-5 border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+          <span class="absolute -left-[38px] sm:-left-[54px] top-5 w-7 h-7 rounded-full bg-choco text-white flex items-center justify-center text-xs shadow border-2 border-white">
+            <i class="fa-solid fa-hand-sparkles"></i>
+          </span>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-4 mb-1">
+            <span class="bg-gray-100 text-choco font-black text-sm sm:text-base px-3.5 py-0.5 rounded-full">17:00</span>
+            <h3 class="text-lg sm:text-xl font-black text-choco">解散</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-choco/75 font-medium">
+            気をつけてお帰りください♪ また次の行事でも会おうね♡
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. 会場・アクセス情報
+       ========================================== -->
+  <section id="access" class="py-14 sm:py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-[2.5rem] border-4 border-lavender-200 shadow-xl p-6 sm:p-10 relative overflow-hidden">
+        <div class="text-center mb-8">
+          <span class="inline-block bg-lavender-100 text-lavender-600 font-black text-xs px-4 py-1 rounded-full border border-lavender-200 mb-2">
+            ACCESS & CONTACT
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-choco text-pop-shadow">
+            会場のご案内
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- 会場詳細 -->
+          <div class="space-y-4">
+            <div class="bg-sakura-50/70 rounded-2xl p-4 border border-sakura-200">
+              <p class="text-xs font-bold text-sakura-500 mb-1">会場名</p>
+              <p class="text-2xl font-black text-choco">東京渋谷念法寺</p>
+            </div>
+
+            <div class="bg-lavender-50/70 rounded-2xl p-4 border border-lavender-200">
+              <p class="text-xs font-bold text-lavender-600 mb-1">所在地</p>
+              <p class="text-base sm:text-lg font-bold text-choco">
+                東京都渋谷区2丁目5-11
+              </p>
+              <button onclick="copyAddress()" class="mt-2 inline-flex items-center gap-1.5 text-xs font-bold text-lavender-600 bg-white hover:bg-lavender-100 px-3 py-1.5 rounded-full border border-lavender-200 shadow-sm transition-all">
+                <i class="fa-regular fa-copy"></i>
+                <span id="copy-btn-text">住所をコピーする</span>
+              </button>
+            </div>
+
+            <div class="bg-amber-50/70 rounded-2xl p-4 border border-amber-200">
+              <p class="text-xs font-bold text-amber-600 mb-1">お問い合わせ電話番号</p>
+              <a href="tel:03-5577-4877" class="text-xl sm:text-2xl font-black text-choco hover:text-sakura-500 transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-phone-volume text-sakura-400"></i>
+                03-5577-4877
+              </a>
+            </div>
+          </div>
+
+          <!-- 可愛いお寺イラスト＆マップリンクカード -->
+          <div class="bg-gradient-to-b from-sakura-50 via-white to-lavender-50 rounded-3xl p-6 border-2 border-dashed border-sakura-300 flex flex-col items-center text-center">
+            <!-- お寺のパステルイラストSVG -->
+            <svg class="w-40 h-32 mb-4 float-slow" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- 雲 -->
+              <path d="M25 45 C25 37, 38 35, 42 42 C48 36, 60 40, 58 48 C64 50, 62 58, 54 58 L24 58 C17 58, 17 47, 25 45 Z" fill="#FFE4EE"/>
+              <path d="M145 35 C145 27, 158 25, 162 32 C168 26, 180 30, 178 38 C184 40, 182 48, 174 48 L144 48 C137 48, 137 37, 145 35 Z" fill="#EDE4FF"/>
+              <!-- お寺の屋根（上段） -->
+              <path d="M100 22 L52 54 L148 54 Z" fill="#9F7AEA" stroke="#5C434C" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M44 54 Q100 46 156 54" stroke="#FB5D92" stroke-width="5" stroke-linecap="round"/>
+              <!-- 屋根飾り -->
+              <circle cx="100" cy="18" r="5" fill="#FBBF24" stroke="#5C434C" stroke-width="2.5"/>
+              <!-- 中段建物 -->
+              <rect x="66" y="54" width="68" height="22" fill="#FFFDF9" stroke="#5C434C" stroke-width="3"/>
+              <!-- 下段屋根 -->
+              <path d="M36 90 L60 74 L140 74 L164 90 Z" fill="#FFB8CE" stroke="#5C434C" stroke-width="3" stroke-linejoin="round"/>
+              <!-- 本堂柱・壁 -->
+              <rect x="52" y="90" width="96" height="44" fill="#FFFDF9" stroke="#5C434C" stroke-width="3"/>
+              <line x1="74" y1="90" x2="74" y2="134" stroke="#5C434C" stroke-width="3"/>
+              <line x1="126" y1="90" x2="126" y2="134" stroke="#5C434C" stroke-width="3"/>
+              <!-- 入り口アーチ -->
+              <path d="M86 134 L86 108 C86 100 114 100 114 108 L114 134 Z" fill="#FFE4EE" stroke="#5C434C" stroke-width="3"/>
+              <!-- 土台 -->
+              <rect x="38" y="134" width="124" height="10" rx="5" fill="#E2D4FF" stroke="#5C434C" stroke-width="3"/>
+            </svg>
+
+            <p class="text-sm font-black text-choco mb-1">渋谷でお待ちしています♡</p>
+            <p class="text-xs text-choco/70 mb-4">
+              道に迷ったときやご不明な点があれば、いつでもお気軽にお電話くださいね♪
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E6%B8%8B%E8%B0%B7%E5%BF%B5%E6%B3%95%E5%AF%BA+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B72-5-11"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-sakura-400 to-lavender-500 text-white font-black text-xs sm:text-sm px-6 py-3 rounded-full shadow hover:opacity-95 transition-all"
+            >
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Googleマップで開く</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. フッター
+       ========================================== -->
+  <footer class="bg-white border-t-2 border-sakura-100 py-10 px-4 pb-28 sm:pb-12 text-center">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm font-black text-sakura-500 mb-1">
+        令和8年 関東ブロック 青少年育成発展祈願護摩
+      </p>
+      <p class="text-xs text-choco/60 font-bold">
+        会場：東京渋谷念法寺（東京都渋谷区2丁目5-11 ／ TEL: 03-5577-4877）
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       9. 写真拡大ライトボックスモーダル
+       ========================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-choco/80 backdrop-blur-sm p-4" onclick="closeLightbox()">
+    <div class="relative max-w-3xl w-full bg-white rounded-3xl p-3 sm:p-5 border-4 border-sakura-300 shadow-2xl" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-sakura-500 text-white text-lg font-bold shadow-lg flex items-center justify-center hover:bg-sakura-600">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="拡大写真" class="w-full max-h-[75vh] object-contain rounded-2xl bg-sakura-50" />
+      <p id="lightbox-caption" class="text-center font-black text-choco text-sm sm:text-base mt-3"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       JavaScript: ちびキャラ描画・アニメーション制御・ギャラリー補助
+       ========================================== -->
+  <script>
+    // 可愛いちびキャラ女の子のSVGテンプレート（白いお衣＆パステル輪袈裟・桜の髪飾り・キラキラ瞳）
+    function getChibiGirlSVG() {
+      return `
+      <svg viewBox="0 0 200 220" class="w-full h-full overflow-visible" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- キラキラエフェクト -->
+        <g class="sparkle-anim">
+          <path d="M30 55 L34 63 L42 67 L34 71 L30 79 L26 71 L18 67 L26 63 Z" fill="#FBBF24" />
+        </g>
+        <g class="sparkle-anim" style="animation-delay: 0.7s;">
+          <path d="M172 45 L175 51 L181 54 L175 57 L172 63 L169 57 L163 54 L169 51 Z" fill="#FB5D92" />
+        </g>
+        <g class="sparkle-anim" style="animation-delay: 1.2s;">
+          <path d="M26 135 C22 130, 14 132, 16 139 C18 144, 26 149, 26 149 C26 149, 34 144, 36 139 C38 132, 30 130, 26 135 Z" fill="#FF8AB0" />
+        </g>
+
+        <!-- 足元の影 -->
+        <ellipse cx="100" cy="204" rx="44" ry="8" fill="#FFD8E4" opacity="0.65" />
+
+        <!-- 後ろ髪（ツインテール風ふんわりボブ） -->
+        <g class="chibi-head">
+          <path d="M48 75 C30 85, 22 125, 38 142 C46 148, 58 138, 58 122 Z" fill="#6D4C5C" stroke="#4A323E" stroke-width="3.2" stroke-linejoin="round" />
+          <path d="M152 75 C170 85, 178 125, 162 142 C154 148, 142 138, 142 122 Z" fill="#6D4C5C" stroke="#4A323E" stroke-width="3.2" stroke-linejoin="round" />
+        </g>
+
+        <!-- 身体（可愛い白衣＆紫パステルの輪袈裟） -->
+        <g>
+          <!-- 靴・足 -->
+          <ellipse cx="86" cy="195" rx="10" ry="7" fill="#FB5D92" stroke="#4A323E" stroke-width="3" />
+          <ellipse cx="114" cy="195" rx="10" ry="7" fill="#FB5D92" stroke="#4A323E" stroke-width="3" />
+
+          <!-- 白衣スカート・裾 -->
+          <path d="M72 125 L58 186 C58 190, 142 190, 142 186 L128 125 Z" fill="#FFFFFF" stroke="#4A323E" stroke-width="3.2" stroke-linejoin="round" />
+          <!-- 裾のパステルライン -->
+          <path d="M61 180 Q100 186 139 180" stroke="#FFD8E4" stroke-width="4" stroke-linecap="round" />
+
+          <!-- 襟元（ピンクの重ね襟） -->
+          <path d="M88 118 L100 136 L112 118" fill="#FFB8CE" stroke="#4A323E" stroke-width="2.8" stroke-linejoin="round" />
+
+          <!-- 輪袈裟（ラベンダー＆ゴールド飾り） -->
+          <path d="M79 122 L85 168 L94 168 L90 124 Z" fill="#9F7AEA" stroke="#4A323E" stroke-width="2.5" stroke-linejoin="round" />
+          <path d="M121 122 L115 168 L106 168 L110 124 Z" fill="#9F7AEA" stroke="#4A323E" stroke-width="2.5" stroke-linejoin="round" />
+          <circle cx="88" cy="148" r="3" fill="#FBBF24" />
+          <circle cx="112" cy="148" r="3" fill="#FBBF24" />
+
+          <!-- 帯リボン -->
+          <rect x="70" y="152" width="60" height="9" rx="4.5" fill="#FFB8CE" stroke="#4A323E" stroke-width="2.5" />
+          <circle cx="100" cy="156.5" r="5" fill="#FB5D92" stroke="#4A323E" stroke-width="2.2" />
+        </g>
+
+        <!-- 左腕（可愛い数珠を持って軽く揺れる） -->
+        <g class="chibi-arm-left">
+          <path d="M74 124 C56 130, 48 148, 56 160 C62 166, 74 156, 76 142 Z" fill="#FFFFFF" stroke="#4A323E" stroke-width="3" stroke-linejoin="round" />
+          <circle cx="58" cy="154" r="6.5" fill="#FFE6DC" stroke="#4A323E" stroke-width="2.6" />
+          <!-- パステル数珠 -->
+          <circle cx="55" cy="162" r="7" stroke="#F687B3" stroke-width="3" stroke-dasharray="3 3" fill="none" />
+        </g>
+
+        <!-- 右腕（元気よく手を振るアニメーション） -->
+        <g class="chibi-arm-right">
+          <path d="M126 124 C144 114, 158 98, 148 88 C140 82, 126 98, 124 116 Z" fill="#FFFFFF" stroke="#4A323E" stroke-width="3" stroke-linejoin="round" />
+          <circle cx="147" cy="91" r="7" fill="#FFE6DC" stroke="#4A323E" stroke-width="2.6" />
+        </g>
+
+        <!-- 頭部全体（ゆっくり首をかしげるアニメーション） -->
+        <g class="chibi-head">
+          <!-- 顔の輪郭 -->
+          <rect x="54" y="42" width="92" height="78" rx="38" fill="#FFE8DF" stroke="#4A323E" stroke-width="3.2" />
+
+          <!-- 耳 -->
+          <circle cx="53" cy="88" r="7" fill="#FFE8DF" stroke="#4A323E" stroke-width="3" />
+          <circle cx="147" cy="88" r="7" fill="#FFE8DF" stroke="#4A323E" stroke-width="3" />
+
+          <!-- 髪の毛ベース（ツヤのあるショコラブラウン） -->
+          <path d="M52 78 C50 44, 74 32, 100 32 C126 32, 150 44, 148 78 C142 62, 130 56, 122 68 C114 54, 102 52, 96 66 C88 54, 76 56, 70 68 C62 58, 56 64, 52 78 Z" fill="#6D4C5C" stroke="#4A323E" stroke-width="3.2" stroke-linejoin="round" />
+
+          <!-- 髪の天使の輪（ハイライト） -->
+          <path d="M72 48 Q100 41 128 48" stroke="#9B7486" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+
+          <!-- 念法寺のはちまき風カチューシャ＆可愛い桜リボン -->
+          <path d="M57 58 Q100 48 143 58" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" />
+          <path d="M57 58 Q100 48 143 58" stroke="#4A323E" stroke-width="3" stroke-linecap="round" fill="none" />
+          <!-- カチューシャ中央の可愛い太陽マーク -->
+          <circle cx="100" cy="53" r="4" fill="#FB5D92" />
+
+          <!-- 桜の髪飾り -->
+          <g class="chibi-ribbon">
+            <circle cx="136" cy="52" r="10" fill="#FFB8CE" stroke="#4A323E" stroke-width="2.5" />
+            <circle cx="144" cy="58" r="8" fill="#FB5D92" stroke="#4A323E" stroke-width="2.5" />
+            <circle cx="140" cy="55" r="3.5" fill="#FBBF24" />
+          </g>
+
+          <!-- ほっぺの赤み -->
+          <ellipse cx="69" cy="95" rx="9" ry="5.5" fill="#FF8AB0" opacity="0.65" />
+          <ellipse cx="131" cy="95" rx="9" ry="5.5" fill="#FF8AB0" opacity="0.65" />
+
+          <!-- 瞳（まばたきアニメーション付き） -->
+          <g class="chibi-eyes">
+            <!-- 左目 -->
+            <ellipse cx="78" cy="84" rx="9.5" ry="11.5" fill="#4A323E" />
+            <ellipse cx="78" cy="86" rx="7" ry="8" fill="#805AD5" />
+            <circle cx="75" cy="79" r="3.8" fill="#FFFFFF" />
+            <circle cx="82" cy="89" r="2" fill="#FFFFFF" />
+            <path d="M66 74 Q78 68 88 75" stroke="#4A323E" stroke-width="3.2" stroke-linecap="round" fill="none" />
+
+            <!-- 右目 -->
+            <ellipse cx="122" cy="84" rx="9.5" ry="11.5" fill="#4A323E" />
+            <ellipse cx="122" cy="86" rx="7" ry="8" fill="#805AD5" />
+            <circle cx="119" cy="79" r="3.8" fill="#FFFFFF" />
+            <circle cx="126" cy="89" r="2" fill="#FFFFFF" />
+            <path d="M112 75 Q122 68 134 74" stroke="#4A323E" stroke-width="3.2" stroke-linecap="round" fill="none" />
+          </g>
+
+          <!-- 眉毛 -->
+          <path d="M70 67 Q78 64 85 67" stroke="#4A323E" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M115 67 Q122 64 130 67" stroke="#4A323E" stroke-width="2.5" stroke-linecap="round" />
+
+          <!-- にっこり笑顔のお口 -->
+          <path d="M93 96 Q100 106 107 96 Z" fill="#FB5D92" stroke="#4A323E" stroke-width="2.6" stroke-linejoin="round" />
+        </g>
+      </svg>
+      `;
+    }
+
+    // ページ読み込み時にちびキャラをセット
+    document.addEventListener('DOMContentLoaded', () => {
+      const containers = document.querySelectorAll('.chibi-svg-container');
+      containers.forEach(container => {
+        container.innerHTML = getChibiGirlSVG();
+      });
+    });
+
+    // ウェルカム画面を閉じる
+    function closeWelcomeScreen() {
+      const screen = document.getElementById('welcome-screen');
+      screen.classList.add('opacity-0', 'pointer-events-none', 'scale-105');
+      setTimeout(() => {
+        screen.style.display = 'none';
+      }, 650);
+    }
+
+    // ウェルカム画面をもう一度表示する
+    function openWelcomeScreen() {
+      const screen = document.getElementById('welcome-screen');
+      screen.style.display = 'flex';
+      requestAnimationFrame(() => {
+        screen.classList.remove('opacity-0', 'pointer-events-none', 'scale-105');
+      });
+    }
+
+    // 右下ちびキャラのセリフ切り替え
+    const chibiMessages = [
+      '渋谷念法寺へようこそ♡<br><span class="text-sakura-500">11月7日(土)</span>に会えるのを楽しみにしてるね♪',
+      '鹿沼・朝霞・千葉の写真ギャラリーもチェックしてみてね📸✨',
+      '12:30から受付スタートだよ！白衣へのお着替えもあるよ♡',
+      '16:00からの<span class="text-lavender-600">青年座談会</span>は、みんなで楽しくおしゃべりできる時間だよ♪',
+      '会場は「東京都渋谷区2丁目5-11」！気をつけて来てね🌸'
+    ];
+    let currentMsgIndex = 0;
+
+    function interactWithChibi() {
+      const bubble = document.getElementById('chibi-speech-bubble');
+      const textEl = document.getElementById('chibi-speech-text');
+      bubble.classList.remove('hidden', 'scale-0');
+      currentMsgIndex = (currentMsgIndex + 1) % chibiMessages.length;
+      textEl.innerHTML = chibiMessages[currentMsgIndex];
+
+      bubble.classList.add('scale-105');
+      setTimeout(() => bubble.classList.remove('scale-105'), 200);
+    }
+
+    function toggleSpeechBubble(e) {
+      e.stopPropagation();
+      const bubble = document.getElementById('chibi-speech-bubble');
+      bubble.classList.toggle('hidden');
+    }
+
+    // スクロール位置に応じてちびキャラが優しく案内
+    let lastScrollSection = '';
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const textEl = document.getElementById('chibi-speech-text');
+      if (!textEl) return;
+
+      if (scrollY > 350 && scrollY < 1100 && lastScrollSection !== 'gallery') {
+        lastScrollSection = 'gallery';
+        textEl.innerHTML = '鹿沼・朝霞・千葉念法寺の思い出ギャラリーだよ📸 写真をタップすると大きく見られるよ♡';
+      } else if (scrollY >= 1100 && scrollY < 1850 && lastScrollSection !== 'schedule') {
+        lastScrollSection = 'schedule';
+        textEl.innerHTML = '13:30からお護摩、16:00からは楽しい青年座談会があるよ✨';
+      } else if (scrollY >= 1850 && lastScrollSection !== 'access') {
+        lastScrollSection = 'access';
+        textEl.innerHTML = '渋谷念法寺で待ってるね♡ わからないことがあればいつでもお電話してね♪';
+      }
+    });
+
+    // ライトボックス表示
+    function openLightbox(imgId, caption) {
+      const sourceImg = document.getElementById(imgId);
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-img');
+      const modalCaption = document.getElementById('lightbox-caption');
+      if (sourceImg && modal && modalImg) {
+        modalImg.src = sourceImg.src;
+        modalCaption.textContent = caption;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // 住所コピー機能（iframe制限対応）
+    function copyAddress() {
+      const address = '東京都渋谷区2丁目5-11';
+      const tempInput = document.createElement('textarea');
+      tempInput.value = address;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+
+      const btnText = document.getElementById('copy-btn-text');
+      btnText.textContent = 'コピーしました♡';
+      setTimeout(() => {
+        btnText.textContent = '住所をコピーする';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
